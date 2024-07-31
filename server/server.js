@@ -10,6 +10,8 @@ app.use(cors());
 app.use(express.json());
 dotenv.config();
 
+const db = new pg.Pool({ connectionString: process.env.DATABASE_URL});
+
 // upon initiation
 app.get("/", function (request, response) {
   response.send("Welcome to the root node! Leave a message!");
@@ -24,10 +26,12 @@ app.get("/messages", async function (request, response) {
   });
   
 // post to database function (link to form on HTML/CSS)
-app.post("/message", function (request, response) {
+app.post("/message", async function (request, response) {
   // retrieve the information from the form
   console.log(request.body);
+  console.log(request.body.name);
   // here we would add input to the database
+  await db.query(`INSERT INTO messages (name, message) VALUES ($1, $2)`, [request.body.name, request.body.message])
   response.json("Form entry added");
 });
 

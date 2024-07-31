@@ -10,12 +10,21 @@
     <h1>Visitor Guestbook</h1>
     <form>
       <label>Name</label>
-      <input name="name" placeholder="name" />
+        <input class = "nameInput"
+          name = "name" 
+          required placeholder ="name" />
 
       <label>Message</label>
-      <input name="message" placeholder="message" />
+        <input class = "messageInput"
+          name = "message"
+          placeholder = "message" />
 
       <button>Submit</button>
+      <br>
+      <br>
+      <ul class="messages" id="messageList">
+        <li></li>
+      </ul>
     </form>
   </body>
 </html>

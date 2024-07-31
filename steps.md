@@ -26,10 +26,14 @@ CREATING THE FRONT END / CLIENT CODE
 
 4. utilise CSS to lay out page content and containers
 
+5. link classes/elements/containers to backend code
+
 
 FINALISE FOR SUBMISSION
-1. produce assignment reflection in README
+1. render code on render
 
-2. double check that all keys & data to not be published are in gitignore 
+2. produce assignment reflection in README
 
-3. push code to GitHub and post a link to repository and page on moodle
+3. double check that all keys & data to not be published are in gitignore 
+
+4. push code to GitHub and post a link to repository and page on moodle
