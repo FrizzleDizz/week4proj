@@ -46,8 +46,3 @@ form.addEventListener("submit", async function (event) {
     console.log(data);
     getMessages();
   });
-
-
-
-//add element & fetch get end point to receive messages
-//make it look pretty

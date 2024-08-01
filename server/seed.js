@@ -5,7 +5,7 @@ dotenv.config();
 
 const db = new pg.Pool({ connectionString: process.env.DATABASE_URL});
 
-//create the cereals table & seeds
+//create the messages table & seeds
 db.query(
 `create table if not exists messages (
   id serial primary key,
