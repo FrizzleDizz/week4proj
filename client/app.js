@@ -17,7 +17,7 @@ async function getMessages() {
     for (let i = 0; i < data.length; i++) {
       console.log(data[i].message);
       const message = document.createElement("li");
-      message.textContent = `${data[i].name} ${data[i].message}`;
+      message.textContent = `${data[i].name} says ${data[i].message}`;
       messageList.appendChild(message);
     }
   }

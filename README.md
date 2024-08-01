@@ -20,6 +20,8 @@ N/A
  Simple application produced
  Comments on each piece of JS showing what each line does
  Good example of how to develop an application front & backend
+
+ Sometimes render server isn't online or is slow (Free version)
  More practice debugging would be good
 
 5. useful external sources that helped you complete the assignment:
