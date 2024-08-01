@@ -4,7 +4,7 @@ const messageList = document.getElementById("messageList");
 
 // fetches messages and appends them to messageList element
 async function getMessages() {
-    const messages = await fetch ("http://localhost:8080/messages");
+    const messages = await fetch ("https://visitor-guestbook-fhs7.onrender.com/messages");
   
     console.log(messages);
   
@@ -35,7 +35,7 @@ form.addEventListener("submit", async function (event) {
     console.log(formValues);
   
     // make an API call when we submit the form
-    const response = await fetch("http://localhost:8080/message", {
+    const response = await fetch("https://visitor-guestbook-fhs7.onrender.com/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
